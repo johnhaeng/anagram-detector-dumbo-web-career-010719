@@ -9,9 +9,12 @@ class Anagram
   
   def match(words)
     anag.each do |word|
-      word.reverse
+      if word.reverse == @word
+        [word.reverse]
+      else
+        []
+      end
     end
-    anag_words
   end
   
 end
