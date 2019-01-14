@@ -11,7 +11,7 @@ class Anagram
     anag = words.split(' ')
     anag_words = []
     anag.each do |word|
-      anag_words.ush(word.reverse)
+      anag_words.push(word.reverse)
     end
     anag_words
   end
