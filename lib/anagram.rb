@@ -13,7 +13,7 @@ class Anagram
       if letters.sort != @word.sort
         []
       else
-        word
+        letter
       end
     end
   end
