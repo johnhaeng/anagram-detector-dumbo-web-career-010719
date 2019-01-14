@@ -8,7 +8,7 @@ class Anagram
   end
   
   def match(words)
-    anag = %w(words)
+    anag = words.split(' ')
     anag_words = []
     anag.each do |word|
       anag_words.ush(word.reverse)
