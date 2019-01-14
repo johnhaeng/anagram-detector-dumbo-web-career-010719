@@ -8,8 +8,6 @@ class Anagram
   end
   
   def match(words)
-    anag = words.split(' ')
-    anag_words = []
     anag.each do |word|
       anag_words.push(word.reverse)
     end
