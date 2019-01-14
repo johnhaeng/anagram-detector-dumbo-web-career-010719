@@ -8,12 +8,10 @@ class Anagram
     @word = word
   end
   
-  def match
-    word.select do |letter|
-      letters = word.split('') 
-      binding.pry
-      if letters.sort != @word.sort
-        []
+  def match(array)
+    array.select do |word|
+      if word.split('').sort == @word.split('').sort
+
       else
         letter
       end
