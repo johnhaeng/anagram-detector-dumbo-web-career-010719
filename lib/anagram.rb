@@ -11,6 +11,7 @@ class Anagram
   def match
     word.each do |letter|
       letters = word.split('') 
+      binding.pry
       if letters.sort != @word.sort
         []
       else
